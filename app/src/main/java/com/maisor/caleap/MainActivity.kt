@@ -349,15 +349,32 @@ private fun CaLeapApp() {
 
 @Composable
 private fun NavItem(
-    target: Tab, current: Tab, onSelect: (Tab) -> Unit,
-    icon: androidx.compose.ui.graphics.vector.ImageVector, label: String
+    target: Tab,
+    current: Tab,
+    onSelect: (Tab) -> Unit,
+    icon: androidx.compose.ui.graphics.vector.ImageVector,
+    label: String
 ) {
-    androidx.compose.material3.NavigationBarItem(
-        selected = target == current,
-        onClick = { onSelect(target) },
-        icon = { Icon(icon, null) },
-        label = { Text(label) }
-    )
+    val selected = target == current
+    Column(
+        modifier = Modifier
+            .weight(1f)
+            .clickable { onSelect(target) }
+            .padding(vertical = 7.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Icon(
+            imageVector = icon,
+            contentDescription = label,
+            tint = if (selected) Purple else Muted
+        )
+        Text(
+            text = label,
+            color = if (selected) Purple else Muted,
+            fontSize = 10.sp,
+            fontWeight = if (selected) FontWeight.SemiBold else FontWeight.Normal
+        )
+    }
 }
 
 @Composable
