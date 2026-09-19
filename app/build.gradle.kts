@@ -12,8 +12,8 @@ android {
         applicationId = "com.maisor.caleap"
         minSdk = 26
         targetSdk = 35
-        versionCode = 1
-        versionName = "0.1.0"
+        versionCode = 4
+        versionName = "0.4.0"
     }
 
     buildFeatures {
@@ -38,5 +38,18 @@ dependencies {
     implementation("androidx.compose.material3:material3")
     implementation("androidx.compose.material:material-icons-extended")
     implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.7")
+
+    // CameraX 1.6.2 - current stable CameraX release
+    implementation("androidx.camera:camera-camera2:1.6.2")
+    implementation("androidx.camera:camera-lifecycle:1.6.2")
+    implementation("androidx.camera:camera-view:1.6.2")
+
+    // On-device image understanding; no API key required
+    implementation("com.google.mlkit:image-labeling:17.0.9")
+
+    // Android Health Connect
+    implementation("androidx.health.connect:connect-client:1.1.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
+
     debugImplementation("androidx.compose.ui:ui-tooling")
 }

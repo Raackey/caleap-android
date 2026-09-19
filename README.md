@@ -1,37 +1,21 @@
-# CaLeap AI — Android V1 Starter
+# CaLeap Premium Intelligence V4
 
-This is the first UI/productization starter based on the CaLeap direction established in the project reference.
+CaLeap AI — Personal Health Context Engine.
 
-Core principle:
-"Show CaLeap. Let AI understand it. Tell me what matters."
+V4 adds the first real device intelligence layer to the premium UI foundation:
+- CameraX live food camera and photo capture
+- On-device ML Kit image labeling (no API key)
+- Confidence-aware visual results and correction/portion clarification UX
+- Health Connect read-permission flow
+- Steps and sleep data reader
+- Premium home/food/progress/insights/profile UI
+- SHOW CALEAP as the main capture entry
 
-Included in this starter:
-- Home dashboard
-- ONE BIG ACTION: SHOW CALEAP
-- Photo / Voice / Report / Food / Health / Medicine / Activity entry sheet
-- Today cards
-- Daily insight
-- Timeline
-- Family
-- Profile
-- Material 3 Compose UI
+Vision: SEE → UNDERSTAND → CONNECT → EXPLAIN → ACT → TRACK → LEARN.
 
-Current status:
-- UI prototype / local Android starter
-- No production AI API
-- No camera integration yet
-- No microphone integration yet
-- No Health Connect integration yet
-- No authentication/payment backend yet
+Important: ML Kit image labeling is general-purpose and does not provide exact calories/macros. Production nutrition intelligence should be connected to a food-specific model/database and a secure backend. Health data is permission-controlled.
 
-Next engineering phase:
-1. Camera capture
-2. Food image analysis API
-3. Voice capture/transcription
-4. Health Connect permissions/data
-5. Local persistence
-6. AI confidence + correction flow
-7. Food database
-8. User accounts
-9. Family permissions
-10. Subscription/payments
+Official implementation references:
+- AndroidX CameraX
+- Android Health Connect
+- Google ML Kit Image Labeling
