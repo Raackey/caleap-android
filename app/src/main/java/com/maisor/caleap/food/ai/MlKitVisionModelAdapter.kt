@@ -92,9 +92,9 @@ class MlKitVisionModelAdapter(
                 }
             }
 
-            continuation.invokeOnCancellation {
-                task.cancel()
-            }
+            // Google Tasks are not cancellable through a public `cancel()` API here.
+            // The continuation guard above prevents a late callback from updating
+            // a cancelled coroutine.
         }
     }
 }

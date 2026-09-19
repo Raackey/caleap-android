@@ -211,7 +211,7 @@ private fun CaLeapApp() {
         ActivityResultContracts.RequestPermission()
     ) { granted ->
         if (granted) cameraLauncher.launch(null)
-        else Toast.makeText(androidx.compose.ui.platform.LocalContext.current, "Camera permission is required to take a photo.", Toast.LENGTH_SHORT).show()
+        else Toast.makeText(context, "Camera permission is required to take a photo.", Toast.LENGTH_SHORT).show()
     }
 
     MaterialTheme(
@@ -267,7 +267,8 @@ private fun CaLeapApp() {
                     { captureSession = CaptureSessionCoordinator.begin(); capture = true },
                     healthSnapshot = healthSnapshot,
                     healthConnected = healthConnected,
-                    mealsToday = savedMeals.size
+                    mealsToday = savedMeals.size,
+                    dailyInsight = dailyInsight
                 )
                 Tab.FOOD -> FoodScreen(Modifier.padding(padding), { capture = true })
                 Tab.PROGRESS -> ProgressScreen(Modifier.padding(padding), healthSnapshot)
@@ -299,7 +300,6 @@ private fun CaLeapApp() {
         if (capture) CaptureSheet(
             onDismiss = { capture = false },
             onCamera = {
-                val context = androidx.compose.ui.platform.LocalContext.current
                 if (androidx.core.content.ContextCompat.checkSelfPermission(context, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
                     cameraLauncher.launch(null)
                 } else {
@@ -352,7 +352,7 @@ private fun NavItem(
     target: Tab, current: Tab, onSelect: (Tab) -> Unit,
     icon: androidx.compose.ui.graphics.vector.ImageVector, label: String
 ) {
-    NavigationBarItem(
+    androidx.compose.material3.NavigationBarItem(
         selected = target == current,
         onClick = { onSelect(target) },
         icon = { Icon(icon, null) },
@@ -361,7 +361,7 @@ private fun NavItem(
 }
 
 @Composable
-private fun HomeScreen(modifier: Modifier, onCapture: () -> Unit, healthSnapshot: HealthSnapshot, healthConnected: Boolean, mealsToday: Int) {
+private fun HomeScreen(modifier: Modifier, onCapture: () -> Unit, healthSnapshot: HealthSnapshot, healthConnected: Boolean, mealsToday: Int, dailyInsight: DailyInsight) {
     LazyColumn(
         modifier = modifier.fillMaxSize().padding(horizontal = 18.dp),
         contentPadding = PaddingValues(top = 20.dp, bottom = 110.dp),
