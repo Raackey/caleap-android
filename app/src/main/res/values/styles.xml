@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.CaLeap" parent="android:style/Theme.Material.Light.NoActionBar">
-        <item name="android:fontFamily">sans</item>
-        <item name="android:windowLightStatusBar">true</item>
-        <item name="android:statusBarColor">#F8FAFC</item>
-        <item name="android:navigationBarColor">#F8FAFC</item>
-    </style>
+    <!--
+        Intentionally empty in V8.3.8.
+        Theme.Word2Prompt is defined only in themes.xml.
+        Keeping this file prevents stale repository files from retaining a duplicate theme.
+    -->
 </resources>
