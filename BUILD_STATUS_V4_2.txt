@@ -1,0 +1,10 @@
+CaLeap Premium Intelligence V4.2 - Final build-toolchain alignment
+
+AGP: 8.10.1
+Gradle wrapper: 8.11.1
+GitHub Actions Gradle: 8.11.1
+compileSdk: 36
+targetSdk: 35
+JDK: 17
+
+This fixes the mismatch where the project wrapper was still using Gradle 8.9.
