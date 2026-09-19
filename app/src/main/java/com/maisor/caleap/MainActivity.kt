@@ -348,7 +348,7 @@ private fun CaLeapApp() {
 }
 
 @Composable
-private fun NavItem(
+private fun RowScope.NavItem(
     target: Tab,
     current: Tab,
     onSelect: (Tab) -> Unit,
