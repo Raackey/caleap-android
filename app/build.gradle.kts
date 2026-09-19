@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.maisor.caleap"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.maisor.caleap"

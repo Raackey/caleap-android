@@ -1,0 +1,10 @@
+CaLeap Premium Intelligence V4.1 - Build Fix
+
+Fixed the Android AAR metadata failure caused by AndroidX Health Connect 1.1.0 and CameraX 1.6.2 requiring compileSdk 36 and a newer Android Gradle Plugin.
+
+Changes:
+- Android Gradle Plugin: 8.10.1
+- Gradle in GitHub Actions: 8.11.1
+- compileSdk: 36
+- targetSdk remains 35 for now
+- JDK remains 17
