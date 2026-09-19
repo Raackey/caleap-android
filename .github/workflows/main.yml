@@ -2,16 +2,14 @@ name: Android Build
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
   pull_request:
-    branches:
-      - main
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
   build:
-    name: Build Android App
+    name: Build CaLeap Android App
     runs-on: ubuntu-latest
 
     steps:
@@ -29,37 +27,58 @@ jobs:
         with:
           gradle-version: '8.11.1'
 
-      - name: Verify Gradle version
+      - name: Verify toolchain
         run: |
-          echo "Gradle version being used:"
+          java -version
           gradle --version
 
-      - name: Find Android project
+      - name: Clean stale source from build workspace
+        shell: bash
         run: |
-          echo "Repository contents:"
-          find . -maxdepth 3 -type f | sort
+          set -euo pipefail
 
-          echo "Searching for Gradle project..."
-          SETTINGS_FILE=$(find . -name "settings.gradle.kts" -o -name "settings.gradle" | head -n 1)
+          SRC="app/src/main/java"
+          ALLOWED="$SRC/com/maisor/caleap"
 
-          if [ -z "$SETTINGS_FILE" ]; then
-            echo "ERROR: settings.gradle.kts or settings.gradle was not found."
+          if [ ! -d "$ALLOWED" ]; then
+            echo "ERROR: CaLeap source directory is missing: $ALLOWED"
             exit 1
           fi
 
-          PROJECT_DIR=$(dirname "$SETTINGS_FILE")
+          echo "Removing Java/Kotlin source outside com/maisor/caleap..."
 
-          echo "Found Gradle project at: $PROJECT_DIR"
-          echo "PROJECT_DIR=$PROJECT_DIR" >> "$GITHUB_ENV"
+          find "$SRC" -type f \( -name "*.kt" -o -name "*.java" \) \
+            ! -path "$ALLOWED/*" -print -delete
+
+          find "$SRC" -type d -empty -delete || true
+
+          if find "$SRC" -type f \( -name "*.kt" -o -name "*.java" \) \
+              ! -path "$ALLOWED/*" | grep -q .; then
+            echo "ERROR: stale Java/Kotlin source remains."
+            find "$SRC" -type f \( -name "*.kt" -o -name "*.java" \) \
+              ! -path "$ALLOWED/*" -print
+            exit 1
+          fi
+
+          echo "Final Java/Kotlin source tree:"
+          find "$SRC" -type f \( -name "*.kt" -o -name "*.java" \) | sort
+
+      - name: Verify no Word2Prompt source
+        shell: bash
+        run: |
+          if find app/src -type f | grep -i "word2prompt"; then
+            echo "ERROR: Word2Prompt source still exists."
+            exit 1
+          fi
+
+          echo "No Word2Prompt source in build context."
 
       - name: Build Debug APK
-        run: |
-          cd "$PROJECT_DIR"
-          gradle :app:assembleDebug --stacktrace
+        run: gradle :app:assembleDebug --stacktrace
 
       - name: Upload APK
         if: success()
         uses: actions/upload-artifact@v4
         with:
-          name: caleap-debug-apk
-          path: '**/app/build/outputs/apk/debug/app-debug.apk'
+          name: caleap-v25-3-debug-apk
+          path: app/build/outputs/apk/debug/app-debug.apk
