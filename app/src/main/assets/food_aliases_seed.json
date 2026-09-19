@@ -1,0 +1,57 @@
+[
+  {
+    "foodId": "food:idli",
+    "language": "en",
+    "alias": "idli"
+  },
+  {
+    "foodId": "food:idli",
+    "language": "en",
+    "alias": "idly"
+  },
+  {
+    "foodId": "food:idli",
+    "language": "kn",
+    "alias": "ಇಡ್ಲಿ"
+  },
+  {
+    "foodId": "food:idli",
+    "language": "hi",
+    "alias": "इडली"
+  },
+  {
+    "foodId": "food:dosa",
+    "language": "en",
+    "alias": "dosa"
+  },
+  {
+    "foodId": "food:dosa",
+    "language": "kn",
+    "alias": "ದೋಸೆ"
+  },
+  {
+    "foodId": "food:dosa",
+    "language": "hi",
+    "alias": "डोसा"
+  },
+  {
+    "foodId": "food:sushi",
+    "language": "en",
+    "alias": "sushi"
+  },
+  {
+    "foodId": "food:sushi",
+    "language": "ja",
+    "alias": "寿司"
+  },
+  {
+    "foodId": "food:tacos",
+    "language": "en",
+    "alias": "tacos"
+  },
+  {
+    "foodId": "food:tacos",
+    "language": "es",
+    "alias": "tacos"
+  }
+]

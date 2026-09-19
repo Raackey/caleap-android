@@ -1,0 +1,117 @@
+[
+  {
+    "foodId": "IN-idli",
+    "canonicalName": "Idli",
+    "aliases": [
+      "idly"
+    ],
+    "countryIso2": "IN",
+    "region": "South Asian",
+    "cuisine": "Indian",
+    "foodType": "dish",
+    "ingredients": [
+      "rice",
+      "urad-dal"
+    ],
+    "serving": {
+      "defaultAmount": 100,
+      "unit": "g",
+      "alternatives": [
+        "piece"
+      ]
+    },
+    "nutrientsPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fibreG": null
+    },
+    "source": {
+      "sourceId": "PENDING_IFCT",
+      "sourceName": "ICMR-NIN Indian Food Composition Tables",
+      "sourceVersion": "2017",
+      "license": "VERIFY_BEFORE_INGESTION",
+      "sourceUrl": "https://www.nin.res.in/ebooks/IFCT2017.pdf"
+    },
+    "quality": {
+      "confidence": 0.0,
+      "lastVerified": null
+    }
+  },
+  {
+    "foodId": "JP-sushi",
+    "canonicalName": "Sushi",
+    "aliases": [],
+    "countryIso2": "JP",
+    "region": "East Asian",
+    "cuisine": "Japanese",
+    "foodType": "dish",
+    "ingredients": [
+      "rice",
+      "fish"
+    ],
+    "serving": {
+      "defaultAmount": 100,
+      "unit": "g",
+      "alternatives": [
+        "piece"
+      ]
+    },
+    "nutrientsPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fibreG": null
+    },
+    "source": {
+      "sourceId": "PENDING",
+      "sourceName": "Source to be selected",
+      "sourceVersion": null,
+      "license": "VERIFY_BEFORE_INGESTION",
+      "sourceUrl": ""
+    },
+    "quality": {
+      "confidence": 0.0,
+      "lastVerified": null
+    }
+  },
+  {
+    "foodId": "MX-tacos",
+    "canonicalName": "Tacos",
+    "aliases": [],
+    "countryIso2": "MX",
+    "region": "North American",
+    "cuisine": "Mexican",
+    "foodType": "dish",
+    "ingredients": [
+      "corn-tortilla"
+    ],
+    "serving": {
+      "defaultAmount": 100,
+      "unit": "g",
+      "alternatives": [
+        "piece"
+      ]
+    },
+    "nutrientsPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fibreG": null
+    },
+    "source": {
+      "sourceId": "PENDING",
+      "sourceName": "Source to be selected",
+      "sourceVersion": null,
+      "license": "VERIFY_BEFORE_INGESTION",
+      "sourceUrl": ""
+    },
+    "quality": {
+      "confidence": 0.0,
+      "lastVerified": null
+    }
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "version": "16.0",
+  "entry": "SHOW CALEAP",
+  "states": [
+    "ready",
+    "capturing",
+    "understanding",
+    "food_candidates",
+    "choose_variant",
+    "choose_portion",
+    "nutrition_review",
+    "saved",
+    "error"
+  ],
+  "principles": [
+    "One primary action",
+    "Show progress without fake AI certainty",
+    "User can correct before saving",
+    "Never silently save an uncertain food interpretation",
+    "Keep the result area dominant"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "3.0",
+  "productVersion": "2.1.0",
+  "purpose": "CaLeap canonical food-vision model registry",
+  "productionRule": "A model may be marked bundled only after its binary artifact, checksum, license, source, mobile runtime and validation report are present.",
+  "models": [
+    {
+      "modelId": "google-mlkit-image-labeling-default",
+      "modelVersion": "17.0.9",
+      "artifact": "Google ML Kit Image Labeling default model (runtime-managed)",
+      "bundledInApk": false,
+      "runtime": "Google ML Kit",
+      "task": "general image labeling",
+      "foodSpecialized": false,
+      "status": "integrated_as_vision_layer",
+      "nutritionAuthority": "CaLeap Food Graph / source-backed nutrition only",
+      "validationReport": "not yet available; V21 is an integration layer, not a food-accuracy certification"
+    }
+  ],
+  "requiredFields": [
+    "modelId",
+    "modelVersion",
+    "artifact",
+    "sha256",
+    "source",
+    "license",
+    "runtime",
+    "input",
+    "output",
+    "validationReport"
+  ]
+}

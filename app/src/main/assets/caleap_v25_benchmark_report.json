@@ -1,0 +1,12 @@
+{
+  "version": "2.5.0",
+  "model": "zeyuai/efficientnet-food-classifier",
+  "status": "not_executed",
+  "cases": 0,
+  "top1Accuracy": null,
+  "top5Accuracy": null,
+  "abstentionRate": null,
+  "perClassRecall": {},
+  "confidenceCalibration": {},
+  "notes": "Populate only from an executed, documented image benchmark. Do not copy model-card metrics into these fields."
+}

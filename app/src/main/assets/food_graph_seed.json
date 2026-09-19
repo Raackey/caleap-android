@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "1.0",
+  "nodes": [
+    {
+      "id": "food:rice",
+      "type": "ingredient",
+      "name": "Rice",
+      "aliases": [
+        "arroz",
+        "reis",
+        "arroz"
+      ],
+      "tags": [
+        "grain"
+      ]
+    },
+    {
+      "id": "food:urad_dal",
+      "type": "ingredient",
+      "name": "Urad dal",
+      "aliases": [
+        "black gram",
+        "urad"
+      ],
+      "tags": [
+        "legume"
+      ]
+    },
+    {
+      "id": "food:idli",
+      "type": "dish",
+      "name": "Idli",
+      "aliases": [
+        "idly"
+      ],
+      "tags": [
+        "fermented",
+        "breakfast"
+      ],
+      "countryIso2": [
+        "IN"
+      ],
+      "cuisine": [
+        "Indian"
+      ]
+    },
+    {
+      "id": "food:dosa",
+      "type": "dish",
+      "name": "Dosa",
+      "aliases": [
+        "dosai"
+      ],
+      "tags": [
+        "fermented",
+        "breakfast"
+      ],
+      "countryIso2": [
+        "IN"
+      ],
+      "cuisine": [
+        "Indian"
+      ]
+    },
+    {
+      "id": "food:sushi",
+      "type": "dish",
+      "name": "Sushi",
+      "aliases": [
+        "寿司"
+      ],
+      "tags": [
+        "rice",
+        "seafood"
+      ],
+      "countryIso2": [
+        "JP"
+      ],
+      "cuisine": [
+        "Japanese"
+      ]
+    },
+    {
+      "id": "food:paella",
+      "type": "dish",
+      "name": "Paella",
+      "aliases": [],
+      "tags": [
+        "rice",
+        "seafood"
+      ],
+      "countryIso2": [
+        "ES"
+      ],
+      "cuisine": [
+        "Spanish"
+      ]
+    },
+    {
+      "id": "food:tacos",
+      "type": "dish",
+      "name": "Tacos",
+      "aliases": [],
+      "tags": [
+        "corn",
+        "street-food"
+      ],
+      "countryIso2": [
+        "MX"
+      ],
+      "cuisine": [
+        "Mexican"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "food:idli",
+      "type": "CONTAINS_INGREDIENT",
+      "to": "food:rice"
+    },
+    {
+      "from": "food:idli",
+      "type": "CONTAINS_INGREDIENT",
+      "to": "food:urad_dal"
+    },
+    {
+      "from": "food:dosa",
+      "type": "CONTAINS_INGREDIENT",
+      "to": "food:rice"
+    },
+    {
+      "from": "food:dosa",
+      "type": "CONTAINS_INGREDIENT",
+      "to": "food:urad_dal"
+    },
+    {
+      "from": "food:sushi",
+      "type": "CONTAINS_INGREDIENT",
+      "to": "food:rice"
+    },
+    {
+      "from": "food:paella",
+      "type": "CONTAINS_INGREDIENT",
+      "to": "food:rice"
+    },
+    {
+      "from": "food:tacos",
+      "type": "HAS_TAG",
+      "to": "food:corn"
+    }
+  ]
+}

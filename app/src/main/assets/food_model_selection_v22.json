@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "3.0",
+  "appVersion": "2.2.0",
+  "status": "runtime-ready-no-model-bundled",
+  "selectedResearchCandidate": {
+    "id": "zeyuai/efficientnet-food-classifier",
+    "license": "Apache-2.0",
+    "mobileArtifact": "tflite/model.tflite",
+    "reportedCategories": 8,
+    "reportedLimitation": "single-item food images; limited category coverage",
+    "source": "Hugging Face model card",
+    "note": "Do not bundle until artifact checksum and Android input/output contract are independently verified."
+  },
+  "requirements": [
+    "actual binary artifact",
+    "SHA-256 checksum",
+    "exact labels file",
+    "input tensor shape/type",
+    "output tensor shape/type",
+    "preprocessing specification",
+    "license/provenance record",
+    "validation report on representative food photos"
+  ]
+}

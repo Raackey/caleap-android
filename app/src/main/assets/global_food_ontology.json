@@ -1,0 +1,508 @@
+{
+  "version": "11.0",
+  "scope": "global-food-routing-seed",
+  "countries": [
+    {
+      "iso2": "IN",
+      "name": "India",
+      "region": "South Asian",
+      "cuisine": "Indian",
+      "representativeFoods": [
+        "idli",
+        "dosa",
+        "sambar",
+        "roti",
+        "biryani",
+        "poha",
+        "upma"
+      ]
+    },
+    {
+      "iso2": "JP",
+      "name": "Japan",
+      "region": "East Asian",
+      "cuisine": "Japanese",
+      "representativeFoods": [
+        "sushi",
+        "miso soup",
+        "onigiri",
+        "ramen",
+        "tempura"
+      ]
+    },
+    {
+      "iso2": "CN",
+      "name": "China",
+      "region": "East Asian",
+      "cuisine": "Chinese",
+      "representativeFoods": [
+        "fried rice",
+        "dumplings",
+        "noodles",
+        "congee",
+        "mapo tofu"
+      ]
+    },
+    {
+      "iso2": "KR",
+      "name": "South Korea",
+      "region": "East Asian",
+      "cuisine": "Korean",
+      "representativeFoods": [
+        "bibimbap",
+        "kimchi",
+        "tteokbokki",
+        "bulgogi"
+      ]
+    },
+    {
+      "iso2": "TH",
+      "name": "Thailand",
+      "region": "Southeast Asian",
+      "cuisine": "Thai",
+      "representativeFoods": [
+        "pad thai",
+        "tom yum",
+        "green curry",
+        "mango sticky rice"
+      ]
+    },
+    {
+      "iso2": "VN",
+      "name": "Vietnam",
+      "region": "Southeast Asian",
+      "cuisine": "Vietnamese",
+      "representativeFoods": [
+        "pho",
+        "banh mi",
+        "spring rolls",
+        "bun cha"
+      ]
+    },
+    {
+      "iso2": "ID",
+      "name": "Indonesia",
+      "region": "Southeast Asian",
+      "cuisine": "Indonesian",
+      "representativeFoods": [
+        "nasi goreng",
+        "gado-gado",
+        "satay",
+        "rendang"
+      ]
+    },
+    {
+      "iso2": "MY",
+      "name": "Malaysia",
+      "region": "Southeast Asian",
+      "cuisine": "Malaysian",
+      "representativeFoods": [
+        "nasi lemak",
+        "laksa",
+        "roti canai",
+        "satay"
+      ]
+    },
+    {
+      "iso2": "PH",
+      "name": "Philippines",
+      "region": "Southeast Asian",
+      "cuisine": "Filipino",
+      "representativeFoods": [
+        "adobo",
+        "sinangag",
+        "lumpia",
+        "pancit"
+      ]
+    },
+    {
+      "iso2": "IT",
+      "name": "Italy",
+      "region": "Southern European",
+      "cuisine": "Italian",
+      "representativeFoods": [
+        "pasta",
+        "pizza",
+        "risotto",
+        "minestrone"
+      ]
+    },
+    {
+      "iso2": "FR",
+      "name": "France",
+      "region": "Western European",
+      "cuisine": "French",
+      "representativeFoods": [
+        "quiche",
+        "ratatouille",
+        "crêpe",
+        "bouillabaisse"
+      ]
+    },
+    {
+      "iso2": "ES",
+      "name": "Spain",
+      "region": "Southern European",
+      "cuisine": "Spanish",
+      "representativeFoods": [
+        "paella",
+        "gazpacho",
+        "tortilla española",
+        "tapas"
+      ]
+    },
+    {
+      "iso2": "GR",
+      "name": "Greece",
+      "region": "Southern European",
+      "cuisine": "Greek",
+      "representativeFoods": [
+        "moussaka",
+        "Greek salad",
+        "souvlaki",
+        "tzatziki"
+      ]
+    },
+    {
+      "iso2": "TR",
+      "name": "Türkiye",
+      "region": "West Asian",
+      "cuisine": "Turkish",
+      "representativeFoods": [
+        "kebab",
+        "mercimek çorbası",
+        "pide",
+        "menemen"
+      ]
+    },
+    {
+      "iso2": "MX",
+      "name": "Mexico",
+      "region": "North American",
+      "cuisine": "Mexican",
+      "representativeFoods": [
+        "tacos",
+        "tamales",
+        "enchiladas",
+        "pozole"
+      ]
+    },
+    {
+      "iso2": "US",
+      "name": "United States",
+      "region": "North American",
+      "cuisine": "American",
+      "representativeFoods": [
+        "burger",
+        "oatmeal",
+        "pancakes",
+        "sandwich"
+      ]
+    },
+    {
+      "iso2": "CA",
+      "name": "Canada",
+      "region": "North American",
+      "cuisine": "Canadian",
+      "representativeFoods": [
+        "poutine",
+        "salmon",
+        "tourtière",
+        "pea soup"
+      ]
+    },
+    {
+      "iso2": "BR",
+      "name": "Brazil",
+      "region": "South American",
+      "cuisine": "Brazilian",
+      "representativeFoods": [
+        "feijoada",
+        "moqueca",
+        "pão de queijo",
+        "acarajé"
+      ]
+    },
+    {
+      "iso2": "AR",
+      "name": "Argentina",
+      "region": "South American",
+      "cuisine": "Argentine",
+      "representativeFoods": [
+        "asado",
+        "empanadas",
+        "locro",
+        "mate"
+      ]
+    },
+    {
+      "iso2": "PE",
+      "name": "Peru",
+      "region": "South American",
+      "cuisine": "Peruvian",
+      "representativeFoods": [
+        "ceviche",
+        "lomo saltado",
+        "aji de gallina",
+        "causa"
+      ]
+    },
+    {
+      "iso2": "MA",
+      "name": "Morocco",
+      "region": "North African",
+      "cuisine": "Moroccan",
+      "representativeFoods": [
+        "tagine",
+        "couscous",
+        "harira",
+        "pastilla"
+      ]
+    },
+    {
+      "iso2": "EG",
+      "name": "Egypt",
+      "region": "North African",
+      "cuisine": "Egyptian",
+      "representativeFoods": [
+        "koshari",
+        "ful medames",
+        "molokhia",
+        "ta'ameya"
+      ]
+    },
+    {
+      "iso2": "NG",
+      "name": "Nigeria",
+      "region": "West African",
+      "cuisine": "Nigerian",
+      "representativeFoods": [
+        "jollof rice",
+        "egusi soup",
+        "pounded yam",
+        "suya"
+      ]
+    },
+    {
+      "iso2": "GH",
+      "name": "Ghana",
+      "region": "West African",
+      "cuisine": "Ghanaian",
+      "representativeFoods": [
+        "waakye",
+        "banku",
+        "fufu",
+        "red red"
+      ]
+    },
+    {
+      "iso2": "KE",
+      "name": "Kenya",
+      "region": "East African",
+      "cuisine": "Kenyan",
+      "representativeFoods": [
+        "ugali",
+        "nyama choma",
+        "sukuma wiki",
+        "githeri"
+      ]
+    },
+    {
+      "iso2": "ET",
+      "name": "Ethiopia",
+      "region": "East African",
+      "cuisine": "Ethiopian",
+      "representativeFoods": [
+        "injera",
+        "doro wat",
+        "shiro",
+        "kitfo"
+      ]
+    },
+    {
+      "iso2": "ZA",
+      "name": "South Africa",
+      "region": "Southern African",
+      "cuisine": "South African",
+      "representativeFoods": [
+        "bobotie",
+        "bunny chow",
+        "pap",
+        "biltong"
+      ]
+    },
+    {
+      "iso2": "AU",
+      "name": "Australia",
+      "region": "Oceania",
+      "cuisine": "Australian",
+      "representativeFoods": [
+        "meat pie",
+        "avocado toast",
+        "lamington",
+        "pavlova"
+      ]
+    },
+    {
+      "iso2": "NZ",
+      "name": "New Zealand",
+      "region": "Oceania",
+      "cuisine": "New Zealand",
+      "representativeFoods": [
+        "hangi",
+        "meat pie",
+        "fish and chips",
+        "pavlova"
+      ]
+    },
+    {
+      "iso2": "SA",
+      "name": "Saudi Arabia",
+      "region": "West Asian",
+      "cuisine": "Saudi",
+      "representativeFoods": [
+        "kabsa",
+        "jareesh",
+        "mutabbaq",
+        "samboosa"
+      ]
+    },
+    {
+      "iso2": "AE",
+      "name": "United Arab Emirates",
+      "region": "West Asian",
+      "cuisine": "Emirati",
+      "representativeFoods": [
+        "machboos",
+        "harees",
+        "luqaimat",
+        "thareed"
+      ]
+    },
+    {
+      "iso2": "IR",
+      "name": "Iran",
+      "region": "West Asian",
+      "cuisine": "Persian",
+      "representativeFoods": [
+        "ghormeh sabzi",
+        "fesenjan",
+        "chelow kebab",
+        "ash reshteh"
+      ]
+    },
+    {
+      "iso2": "PK",
+      "name": "Pakistan",
+      "region": "South Asian",
+      "cuisine": "Pakistani",
+      "representativeFoods": [
+        "biryani",
+        "nihari",
+        "haleem",
+        "chapli kebab"
+      ]
+    },
+    {
+      "iso2": "BD",
+      "name": "Bangladesh",
+      "region": "South Asian",
+      "cuisine": "Bangladeshi",
+      "representativeFoods": [
+        "bhuna khichuri",
+        "hilsa curry",
+        "panta bhat",
+        "fuchka"
+      ]
+    },
+    {
+      "iso2": "LK",
+      "name": "Sri Lanka",
+      "region": "South Asian",
+      "cuisine": "Sri Lankan",
+      "representativeFoods": [
+        "rice and curry",
+        "hoppers",
+        "kottu",
+        "string hoppers"
+      ]
+    },
+    {
+      "iso2": "NP",
+      "name": "Nepal",
+      "region": "South Asian",
+      "cuisine": "Nepali",
+      "representativeFoods": [
+        "dal bhat",
+        "momo",
+        "thukpa",
+        "sel roti"
+      ]
+    },
+    {
+      "iso2": "DE",
+      "name": "Germany",
+      "region": "Central European",
+      "cuisine": "German",
+      "representativeFoods": [
+        "sauerbraten",
+        "bratwurst",
+        "pretzel",
+        "sauerkraut"
+      ]
+    },
+    {
+      "iso2": "GB",
+      "name": "United Kingdom",
+      "region": "Northern European",
+      "cuisine": "British",
+      "representativeFoods": [
+        "fish and chips",
+        "shepherd's pie",
+        "porridge",
+        "roast dinner"
+      ]
+    },
+    {
+      "iso2": "SE",
+      "name": "Sweden",
+      "region": "Northern European",
+      "cuisine": "Swedish",
+      "representativeFoods": [
+        "meatballs",
+        "gravlax",
+        "knäckebröd",
+        "pea soup"
+      ]
+    },
+    {
+      "iso2": "NO",
+      "name": "Norway",
+      "region": "Northern European",
+      "cuisine": "Norwegian",
+      "representativeFoods": [
+        "salmon",
+        "fårikål",
+        "lefse",
+        "fish cakes"
+      ]
+    },
+    {
+      "iso2": "RU",
+      "name": "Russia",
+      "region": "Eastern European",
+      "cuisine": "Russian",
+      "representativeFoods": [
+        "borscht",
+        "pelmeni",
+        "blini",
+        "shchi"
+      ]
+    }
+  ],
+  "source_strategy": [
+    "FAO/INFOODS global food-composition directory",
+    "country/regional food-composition databases listed by FAO/INFOODS",
+    "licensed open food/model sources only after license review"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1.0",
+  "purpose": "CaLeap V19 verified food-vision model registry",
+  "rules": [
+    "Every bundled model must have an exact model identifier and version.",
+    "License must be recorded and commercially compatible before distribution.",
+    "Model outputs identify candidates; nutrition comes only from source-backed food knowledge.",
+    "Unknown and low-confidence results must remain visible to the user.",
+    "Do not claim an external model is bundled until the binary artifact is actually included and verified."
+  ],
+  "models": []
+}

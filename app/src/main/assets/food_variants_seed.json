@@ -1,0 +1,238 @@
+[
+  {
+    "variantId": "food:dosa:plain",
+    "canonicalFoodId": "food:dosa",
+    "name": "Plain Dosa",
+    "aliases": [
+      "plain dosa",
+      "sada dosa"
+    ],
+    "countryIso2": [
+      "IN"
+    ],
+    "regions": [
+      "South Asian"
+    ],
+    "cuisines": [
+      "Indian"
+    ],
+    "ingredients": [
+      "food:rice",
+      "food:urad_dal"
+    ],
+    "tags": [
+      "fermented",
+      "breakfast"
+    ],
+    "prep": [
+      "griddle-cooked"
+    ],
+    "commonServings": [
+      "piece",
+      "plate"
+    ]
+  },
+  {
+    "variantId": "food:dosa:masala",
+    "canonicalFoodId": "food:dosa",
+    "name": "Masala Dosa",
+    "aliases": [
+      "masala dosa"
+    ],
+    "countryIso2": [
+      "IN"
+    ],
+    "regions": [
+      "South Asian"
+    ],
+    "cuisines": [
+      "Indian"
+    ],
+    "ingredients": [
+      "food:rice",
+      "food:urad_dal",
+      "food:potato"
+    ],
+    "tags": [
+      "fermented",
+      "breakfast",
+      "stuffed"
+    ],
+    "prep": [
+      "griddle-cooked",
+      "stuffed"
+    ],
+    "commonServings": [
+      "piece",
+      "plate"
+    ]
+  },
+  {
+    "variantId": "food:dosa:ragi",
+    "canonicalFoodId": "food:dosa",
+    "name": "Ragi Dosa",
+    "aliases": [
+      "finger millet dosa"
+    ],
+    "countryIso2": [
+      "IN"
+    ],
+    "regions": [
+      "South Asian"
+    ],
+    "cuisines": [
+      "Indian"
+    ],
+    "ingredients": [
+      "food:ragi",
+      "food:rice",
+      "food:urad_dal"
+    ],
+    "tags": [
+      "millet",
+      "fermented",
+      "breakfast"
+    ],
+    "prep": [
+      "griddle-cooked"
+    ],
+    "commonServings": [
+      "piece",
+      "plate"
+    ]
+  },
+  {
+    "variantId": "food:dosa:neer",
+    "canonicalFoodId": "food:dosa",
+    "name": "Neer Dosa",
+    "aliases": [
+      "neer dosai"
+    ],
+    "countryIso2": [
+      "IN"
+    ],
+    "regions": [
+      "South Asian"
+    ],
+    "cuisines": [
+      "Indian"
+    ],
+    "ingredients": [
+      "food:rice"
+    ],
+    "tags": [
+      "thin",
+      "breakfast"
+    ],
+    "prep": [
+      "griddle-cooked"
+    ],
+    "commonServings": [
+      "piece",
+      "plate"
+    ]
+  },
+  {
+    "variantId": "food:idli:plain",
+    "canonicalFoodId": "food:idli",
+    "name": "Plain Idli",
+    "aliases": [
+      "idli"
+    ],
+    "countryIso2": [
+      "IN"
+    ],
+    "regions": [
+      "South Asian"
+    ],
+    "cuisines": [
+      "Indian"
+    ],
+    "ingredients": [
+      "food:rice",
+      "food:urad_dal"
+    ],
+    "tags": [
+      "steamed",
+      "fermented",
+      "breakfast"
+    ],
+    "prep": [
+      "steamed"
+    ],
+    "commonServings": [
+      "piece",
+      "plate"
+    ]
+  },
+  {
+    "variantId": "food:idli:ragi",
+    "canonicalFoodId": "food:idli",
+    "name": "Ragi Idli",
+    "aliases": [
+      "finger millet idli"
+    ],
+    "countryIso2": [
+      "IN"
+    ],
+    "regions": [
+      "South Asian"
+    ],
+    "cuisines": [
+      "Indian"
+    ],
+    "ingredients": [
+      "food:ragi",
+      "food:rice",
+      "food:urad_dal"
+    ],
+    "tags": [
+      "millet",
+      "steamed",
+      "fermented"
+    ],
+    "prep": [
+      "steamed"
+    ],
+    "commonServings": [
+      "piece",
+      "plate"
+    ]
+  },
+  {
+    "variantId": "food:rice:biryani",
+    "canonicalFoodId": "food:rice",
+    "name": "Biryani",
+    "aliases": [
+      "biriyani"
+    ],
+    "countryIso2": [
+      "IN",
+      "PK",
+      "BD"
+    ],
+    "regions": [
+      "South Asian"
+    ],
+    "cuisines": [
+      "Indian",
+      "Pakistani",
+      "Bangladeshi"
+    ],
+    "ingredients": [
+      "food:rice"
+    ],
+    "tags": [
+      "rice-dish",
+      "mixed-dish"
+    ],
+    "prep": [
+      "layered",
+      "cooked"
+    ],
+    "commonServings": [
+      "bowl",
+      "plate"
+    ]
+  }
+]

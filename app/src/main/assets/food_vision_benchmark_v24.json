@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1.0",
+  "version": "2.4.0",
+  "status": "benchmark-suite-definition-no-results",
+  "requiredSlices": [
+    "Indian vegetarian",
+    "Indian non-vegetarian",
+    "South Asian",
+    "East Asian",
+    "Middle Eastern",
+    "European",
+    "North American",
+    "African",
+    "Latin American",
+    "mixed plate",
+    "low light",
+    "occluded food",
+    "multiple foods",
+    "non-food image"
+  ],
+  "minimumCaseCountBeforeProduction": 200,
+  "requiredMetrics": [
+    "top1Accuracy",
+    "top5Accuracy",
+    "abstentionRate",
+    "confidenceCalibration",
+    "per-class recall",
+    "unknown/non-food rejection"
+  ],
+  "rule": "No accuracy number may be entered into this manifest until measured on a documented test set."
+}

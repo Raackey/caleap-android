@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0",
+  "record": {
+    "foodId": "stable unique identifier",
+    "canonicalName": "preferred food name",
+    "aliases": [
+      "localized/common names"
+    ],
+    "countryIso2": "ISO 3166-1 alpha-2",
+    "region": "broad geographic region",
+    "cuisine": "cuisine family",
+    "foodType": "dish | ingredient | beverage | snack | packaged",
+    "ingredients": [
+      "canonical ingredient ids"
+    ],
+    "serving": {
+      "defaultAmount": 100,
+      "unit": "g",
+      "alternatives": [
+        "piece",
+        "cup",
+        "bowl",
+        "ml"
+      ]
+    },
+    "nutrientsPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fibreG": null
+    },
+    "source": {
+      "sourceId": "required",
+      "sourceName": "required",
+      "sourceVersion": "optional",
+      "license": "required",
+      "sourceUrl": "required"
+    },
+    "quality": {
+      "confidence": 0.0,
+      "lastVerified": "YYYY-MM-DD"
+    }
+  }
+}

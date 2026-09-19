@@ -1,0 +1,25 @@
+{
+  "version": "15.0",
+  "stages": [
+    "input",
+    "understanding",
+    "candidate_foods",
+    "variant_disambiguation",
+    "portion",
+    "nutrition_review",
+    "confirmation",
+    "timeline",
+    "context"
+  ],
+  "principles": [
+    "Never invent a food identity when evidence is weak",
+    "Ask only questions that materially change the result",
+    "Keep nutrition source provenance attached to records",
+    "Allow user correction before saving"
+  ],
+  "example": {
+    "input": "masala dosa",
+    "countryIso2": "IN",
+    "expected": "variant_disambiguation"
+  }
+}

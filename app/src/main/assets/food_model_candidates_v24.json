@@ -1,0 +1,28 @@
+[
+  {
+    "source": "Hugging Face model card",
+    "modelId": "zeyuai/efficientnet-food-classifier",
+    "license": "Apache-2.0",
+    "tflitePublished": true,
+    "input": "224x224 RGB float32 according to published TFLite example",
+    "classes": [
+      "Baked Potato",
+      "Burger",
+      "Crispy Chicken",
+      "Donut",
+      "Fries",
+      "Hot Dog",
+      "Pizza",
+      "Sandwich"
+    ],
+    "reportedAccuracy": 0.933,
+    "reportedAccuracyType": "self-reported",
+    "limitations": [
+      "8 categories only",
+      "single-item clearly visible food images",
+      "web-scraped training images may not generalize"
+    ],
+    "productionStatus": "candidate-only",
+    "sourceCitation": "https://huggingface.co/zeyuai/efficientnet-food-classifier"
+  }
+]

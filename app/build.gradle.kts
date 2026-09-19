@@ -12,8 +12,8 @@ android {
         applicationId = "com.maisor.caleap"
         minSdk = 26
         targetSdk = 35
-        versionCode = 1
-        versionName = "1.0.0"
+        versionCode = 28
+        versionName = "2.6.0"
     }
 
     buildFeatures { compose = true }
@@ -26,13 +26,16 @@ android {
 }
 
 dependencies {
-    val composeBom = platform("androidx.compose:compose-bom:2025.01.00")
-    implementation(composeBom)
-    implementation("androidx.core:core-ktx:1.15.0")
+    implementation(platform("androidx.compose:compose-bom:2025.01.00"))
     implementation("androidx.activity:activity-compose:1.10.0")
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
+    implementation("androidx.compose.material:material-icons-extended")
     implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.7")
+    implementation("androidx.health.connect:connect-client:1.1.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
+    implementation("com.google.mlkit:image-labeling:17.0.9")
+    implementation("org.tensorflow:tensorflow-lite:2.16.1")
     debugImplementation("androidx.compose.ui:ui-tooling")
 }

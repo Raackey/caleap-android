@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "1.0",
+  "status": "candidate_not_bundled",
+  "modelId": "zeyuai/efficientnet-food-classifier",
+  "modelVersion": "main",
+  "license": "Apache-2.0",
+  "source": "Hugging Face model card",
+  "artifact": "tflite/model.tflite",
+  "artifactExpectedSizeBytes": null,
+  "sha256": null,
+  "runtime": "TensorFlow Lite",
+  "input": {
+    "shape": [
+      1,
+      224,
+      224,
+      3
+    ],
+    "type": "float32",
+    "color": "RGB"
+  },
+  "output": {
+    "type": "float32",
+    "classes": 8
+  },
+  "preprocessing": "resize 224x224; float32 RGB; model card example shows raw 0..255 pixel values",
+  "labels": [
+    "Baked Potato",
+    "Burger",
+    "Crispy Chicken",
+    "Donut",
+    "Fries",
+    "Hot Dog",
+    "Pizza",
+    "Sandwich"
+  ],
+  "reportedMetrics": {
+    "accuracy": 0.933,
+    "f1Weighted": 0.933,
+    "precisionWeighted": 0.934,
+    "recallWeighted": 0.933,
+    "source": "self-reported model-card evaluation"
+  },
+  "limitations": [
+    "8 classes only",
+    "best on clearly visible single-item food images",
+    "web-scraped training images may not generalize to all food photography"
+  ],
+  "productionGate": {
+    "artifactPresent": false,
+    "checksumVerified": false,
+    "licenseVerified": true,
+    "tensorContractVerified": true,
+    "preprocessingVerified": true,
+    "labelMapVerified": true,
+    "caLeapBenchmarkCompleted": false,
+    "productionEligible": false
+  }
+}

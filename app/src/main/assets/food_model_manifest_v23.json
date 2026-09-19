@@ -1,0 +1,25 @@
+{
+  "status": "template-only-not-production",
+  "modelId": "REPLACE_WITH_VERIFIED_MODEL_ID",
+  "modelVersion": "REPLACE",
+  "modelAsset": "food_model.tflite",
+  "license": "REPLACE_AFTER_LICENSE_VERIFICATION",
+  "inputWidth": 224,
+  "inputHeight": 224,
+  "mean": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "std": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "outputLabels": [],
+  "topK": 5,
+  "artifactSha256": "REPLACE",
+  "tensorContract": "float32 [1,H,W,3] -> float32 [1,N]",
+  "preprocessing": "REPLACE_WITH_MODEL_CARD_SPEC",
+  "productionEligible": false
+}
