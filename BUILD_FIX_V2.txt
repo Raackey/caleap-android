@@ -1,0 +1,4 @@
+CaLeap Android V2 build fix
+
+Fixed Java/Kotlin JVM target mismatch by setting both Java and Kotlin to JVM 17.
+Included GitHub Actions workflow using Gradle 8.9 and JDK 17.
